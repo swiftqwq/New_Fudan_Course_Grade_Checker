@@ -425,8 +425,8 @@ def format_grades(data):
             print(f"{ 'Course Code':<12} { 'Course Name':<30} { 'Grade':<6} { 'GP':<5} { 'Credits':<7}")
             print("-" * 70)
             for g in semester_grades:
-                code = g.get('courseCode', '-')
-                name = g.get('courseName', '-')
+                code = '******'#g.get('courseCode', '-')
+                name = '******'#g.get('courseName', '-')
                 grade = g.get('gaGrade', '-')
                 gp = g.get('gp')
                 credits = g.get('credits')

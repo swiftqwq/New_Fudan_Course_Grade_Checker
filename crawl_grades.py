@@ -422,7 +422,7 @@ def format_grades(data):
         if not semester_grades:
             print("  (No grades recorded)")
         else:
-            print(f"{ 'Course Code':<12} { 'Course Name':<30} { 'Grade':<6} { 'GP':<5} { 'Credits':<7}")
+            print(f"{ 'Course Code':<12} { 'Course Name':<30} { 'Grade':<6} { 'GPA':<5} { 'Credits':<7}")
             print("-" * 70)
             for g in semester_grades:
                 code = '******'#g.get('courseCode', '-')
